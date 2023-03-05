@@ -7,11 +7,15 @@ compile_sass = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
 
-theme = "simple-dev-blog"
+render_emoji = true
+
+theme = "zola-paper"
 
 taxonomies = [
-  { name = "tags", feed = true, render = true },
+    {name = "tags", rss = true, paginate_by = 5},
 ]
+
+title = "matatabi.dev"
 
 [markdown]
 # Whether to do syntax highlighting
@@ -20,3 +24,7 @@ highlight_code = true
 
 [extra]
 # Put all your custom variables here
+
+
+# links = []
+# google_analytics = { enabled = true, id = "UA-174641029-2"}
